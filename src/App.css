@@ -1,0 +1,878 @@
+:root {
+    font-size: 10px;
+    --main-color: #e31111;
+    --second-color: rgb(192, 188, 188);
+    --bg-color: rgb(232, 231, 231);
+}
+
+/*Header start*/
+.headerdiv {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 2;
+    border-bottom: 1px solid;
+    border-color: var(--second-color);
+}
+
+.header-logo {
+    font-size: 3.2rem;
+    color: var(--main-color);
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.header-search {
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-left: 4rem;
+    width: 16rem;
+    height: 4rem;
+    border: 1px solid;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.header-search:hover {
+    color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+}
+
+.ioSearch {
+    margin-right: .5rem;
+    margin-left: 0.4rem;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.link {
+    width: 12rem;
+    height: 4rem;
+    cursor: pointer;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 1.8rem;
+    margin-right: 2rem;
+    border: none;
+    position: relative;
+
+}
+
+.link:hover {
+    color: var(--main-color);
+}
+
+.arrow-icon {
+    font-size: 2.2rem;
+    position: absolute;
+}
+.menu-container{
+    display: none;
+    margin-right: 6rem;
+    font-size: 7rem;
+    cursor: pointer;
+}
+.menu-container:hover{
+    color: var(--main-color);
+}
+/*Header end*/
+
+/*Footer start*/
+.footerdiv {
+    width: 100%;
+    height: 28rem;
+    position: relative;
+    bottom: 0px;
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+}
+
+.footer-middle {
+    display: flex;
+    gap: 4rem;
+    margin: 1rem 8rem;
+    margin-bottom: 8rem;
+}
+
+.follow-us-icons {
+    display: flex;
+    align-items: center;
+}
+
+.follow-us-link {
+    cursor: pointer;
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+    color: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 5px 10px 7px var(--second-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-number {
+    font-size: 3rem;
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+.footer-lower {
+    background-color: white;
+    width: 90%;
+    margin-left: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid;
+    border-color: var(--second-color);
+}
+
+.footer-lower-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-lower-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-lower-right p {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+/*Footer end*/
+
+/*HOME PAGE START*/
+
+/*Home start*/
+.homediv {
+    padding-top: 4rem;
+    background-color: var(--bg-color);
+    padding-bottom: 10rem;
+}
+/*Home end*/
+
+/*Swiper start*/
+.swiperdiv {
+    width: 85%;
+    height: 40rem;
+    margin: auto;
+    --swiper-pagination-color: var(--main-color);
+    --swiper-pagination-bullet-size: 2rem;
+    --swiper-pagination-bullet-inactive-color: #ffffff;
+    --swiper-pagination-bullet-inactive-opacity: 0.3;
+    --swiper-pagination-bullet-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 4px;
+    --swiper-pagination-bullet-vertical-gap: 6px;
+    --swiper-navigation-color: var(--main-color);
+}
+
+.swiper-slide-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-foto {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+}
+
+.swiper-foto-title {
+    position: absolute;
+    top: -1rem;
+    color: white;
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+.swiper-foto-buttonlink {
+    position: absolute;
+    top: 14rem;
+}
+
+.swiper-foto-button {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    width: 12rem;
+    height: 5rem;
+    border: none;
+    border-radius: 0.6rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.swiper-foto-button:hover {
+    color: white;
+    background-color: var(--main-color);
+}
+/*Swiper end*/
+
+/*CarLogo start*/
+.car-logodiv {
+    margin: auto;
+    width: 80%;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.car-logo {
+    height: 9rem;
+    flex: 1;
+    font-size: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--second-color);
+    border-radius: 0.6rem;
+    cursor: pointer;
+    color: black;
+}
+/*CarLogo end*/
+
+/*HomeContent start*/
+.home-contentdiv {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    row-gap: 3rem;
+}
+
+.single-home-content {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    height: 50rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid;
+    border-color: var(--second-color);
+}
+
+.single-home-content-info {
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 50%;
+    align-items: center;
+}
+
+.single-home-content img {
+    width: 50%;
+    height: 100%;
+    /*   border-top-right-radius: 1rem;
+    border-bottom-right-radius:1rem ; */
+}
+
+.single-home-content-left-img {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.single-home-content-right-img {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.single-home-content-info h2 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.single-home-content-info p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.single-home-content-info button {
+    color: var(--main-color);
+    width: 18rem;
+    height: 5rem;
+    border: 1px solid;
+    border-color: var(--main-color);
+    background-color: white;
+    border-radius: 0.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.single-home-content-info button:hover {
+    background-color: black;
+    color: white;
+    border: none;
+}
+/*HomeContent end*/
+/*HOME PAGE END*/
+
+/*FIND CAR START*/
+/*FindCar start*/
+
+.find-cardiv {
+    background-color: var(--bg-color);
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10rem;
+}
+
+.find-cardiv h1 {
+    font-size: 5rem;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.find-cardiv h3 {
+    font-size: 2rem;
+    margin: auto;
+}
+
+/*FindCar end*/
+/*FIND CAR END*/
+
+
+/*BRANDS START*/
+
+.branddiv {
+    padding-top: 1rem;
+    background-color: var(--bg-color);
+}
+
+.brand-title {
+    font-size: 7rem;
+    text-align: center;
+}
+
+/*DropDownMenu start*/
+.drop-down-menudiv {
+    position: absolute;
+    opacity: 1;
+    left: -5rem;
+    top: 7rem;
+    color: white;
+    background-color: var(--main-color);
+    width: 30rem;
+    height: 30rem;
+    cursor: default;
+    border-radius: .8rem;
+    text-decoration: none;
+}
+
+.drop-down-menudiv:before {
+    position: absolute;
+    top: -7px;
+    left: 40%;
+    display: inline-block;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid var(--main-color);
+    border-left: 7px solid transparent;
+    border-bottom-color: var(--main-color);
+    content: '';
+}
+
+/* .drop-down-menudiv:after {
+    position: absolute;
+    top: -6px;
+    left: 40%;
+    display: inline-block;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid var(--main-color);
+    border-left: 6px solid transparent;
+    content: '';
+} */
+
+.drop-down-menu-item {
+    cursor: pointer;
+    list-style-type: none;
+    list-style: none;
+    font-size: 4.1rem;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.drop-down-menu-item.volkswagen {
+    border: none;
+}
+
+.drop-down-menu-item span {
+    margin-left: 2rem;
+}
+/*DropDownMenu end*/
+
+/*Models start*/
+.modelsdiv {
+    width: 80%;
+    margin: auto;
+}
+
+.models-swiperdiv {
+    margin-bottom: 6rem;
+    --swiper-pagination-color: var(--main-color);
+    --swiper-pagination-bottom: -3px;
+    --swiper-pagination-bullet-size: 1rem;
+}
+
+.models-title {
+    font-size: 3.5rem;
+}
+
+.model-item {
+    height: 28rem;
+    background-color: white;
+    border-radius: 0.8rem;
+    box-shadow: 7px 7px 10px var(--second-color);
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.model-item img {
+    width: 80%;
+    height: 68%;
+    margin-top: 1.5rem;
+    margin-left: 2.4rem;
+    border-radius: 0.8rem;
+}
+
+.model-item h4 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+}
+/*Models end*/
+
+/*AccordionFAQ start*/
+.faqdiv {
+    padding-top: 8rem;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 10rem;
+}
+
+.faq-title {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.faq-items-container {
+    border-radius: 2rem;
+    background-color: white;
+    border-bottom: 1px solid;
+    border-color: var(--second-color);
+}
+
+.faq-item {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    font-size: 2.3rem;
+    border-bottom: 1px solid;
+    border-color: var(--second-color);
+    position: relative;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
+    cursor: pointer;
+}
+
+.faq-item.last {
+    border-bottom: none;
+}
+
+.faq-arrow {
+    position: absolute;
+    right: 0;
+}
+
+.faq-item-question {
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+
+.faq-item-answer {
+    font-size: 2rem;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease;
+}
+.faq-item-answer.open {
+    max-height: 1000px;
+}
+/*AccordionFAQ end*/
+/*BRANDS END*/
+
+
+/*BreadCrumbs start*/
+.bread-crumbsdiv {
+    padding-top: 12rem;
+    background-color: var(--bg-color);
+    font-size: 2rem;
+    padding-left: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.bread-crumbs-link {
+    color: black;
+    text-decoration: none;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+/*BreadCrumbs end*/
+
+/*Campaigns start*/
+.campaignsdiv {
+    padding-top: 4rem;
+    background-color: var(--bg-color);
+}
+
+.campaigns-title {
+    font-size: 6rem;
+    text-align: center;
+}
+
+.campaigns-type-container {
+    background-color: var(--second-color);
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    width: 40rem;
+    margin: auto;
+    justify-content: center;
+    height: 5rem;
+    margin-bottom: 4rem;
+    border-radius: 0.8rem;
+}
+
+.campaigns-type {
+    cursor: pointer;
+    font-size: 2.4rem;
+    border-radius: 0.8rem;
+    height: 4.6rem;
+    display: flex;
+    align-items: center;
+    width: 49%;
+    justify-content: center;
+}
+
+.campaigns-type.active {
+    background-color: white;
+}
+
+.campaigns-show-more-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+
+.campaigns-show-more {
+    color: var(--main-color);
+    width: 18rem;
+    height: 5rem;
+    border: 1px solid;
+    border-color: var(--main-color);
+    background-color: white;
+    border-radius: 0.4rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.campaigns-show-more:hover {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+/*Campaigns end*/
+
+/*Help start*/
+.helpdiv {
+    background-color: var(--bg-color);
+    position: relative;
+}
+
+.help-search {
+    background-color: white;
+    width: 34rem;
+    position: absolute;
+    right: 1rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--second-color);
+    border-radius: 2rem;
+
+}
+
+.help-search:focus {
+    border-color: var(--main-color);
+}
+
+.help-search-ioSearch {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    position: absolute;
+
+}
+
+.help-search-input {
+    border: none;
+    border-radius: 2rem;
+    width: 34rem;
+    height: 3.8rem;
+    font-size: 2rem;
+    padding-left: 2.5rem;
+}
+
+.help-search-input:focus {
+    outline: none;
+    border-radius: 2rem;
+    border: 1px solid;
+    border-color: var(--main-color);
+}
+/*Help end*/
+
+/*ContactUs start*/
+.contact-usdiv {
+    padding-top: 4rem;
+    background-color: var(--bg-color);
+    padding-bottom: 10rem;
+}
+
+.contact-us-title {
+    font-size: 6rem;
+    text-align: center;
+}
+
+.contact-form {
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    font-size: 2rem;
+    color: var(--main-color);
+    position: relative;
+    padding-bottom: 8rem;
+}
+.contact-name{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: -13rem;
+    justify-content: space-around;
+}
+.contact-info {
+    margin: 2.5rem;
+    padding-left: 8rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  
+}
+.contact-info input{
+    width:80%;  
+    border: 1px solid var(--second-color);
+    height: 4rem;
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+}
+.contact-info input:focus{
+    outline: none;
+    border-color: black;
+}
+.contact-message {
+    margin: 2.5rem;
+    padding-left: 8rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.contact-message textarea{
+    width:80%;
+    height: 14rem;
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    border-color: var(--second-color);
+}
+.contact-message textarea:focus{
+    outline: none;
+    border-color: black;
+}
+.contact-submit{
+    color: var(--main-color);
+    width: 18rem;
+    height: 5rem;
+    border: 1px solid;
+    border-color: var(--main-color);
+    background-color: white;
+    border-radius: 0.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    right: 12rem;
+    bottom: 2rem;
+}
+
+.contact-submit:hover{
+    background-color: black ;
+    color: white;
+    border: none;
+   
+}
+/*ContactUs end*/
+
+/*SideBar start*/
+.sidebardiv{
+    display: none;
+    background-color: var(--second-color);
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 34rem;
+    height: 122rem; /*10vh*/
+}
+.close-logo{
+    cursor: pointer;
+    font-size: 6rem;
+    position: absolute;
+    right: 3rem;
+    top: 1rem;
+}
+.close-logo:hover{
+    color: var(--main-color);
+}
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    margin-top: 5rem;
+}
+
+.sidebar-link {
+    width: 100%;
+    height: 8rem;
+    cursor: pointer;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 5rem;
+    margin-right: 2rem;
+    border: none;
+    position: relative;
+    border-bottom: 1px solid black;
+    text-align: start;
+    
+}
+.sidebar-link:hover{
+    color: var(--main-color);
+}
+.sidebar-link.brands{
+    border-bottom: none;
+}
+.brands-link-div{
+   color: black;
+}
+.drop-down-menu-item.sidebar:hover{
+    color: var(--main-color);
+}
+.drop-down-menu-item.sidebar{
+    color: black;
+    border-bottom: none;
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+}
+.sidebar-link.campaigns{
+    border-top: 1px solid black;
+}
+.sidebar-search{
+    display: block;
+    font-size: 4rem;
+    cursor: pointer;
+    margin-left: 2rem;
+    width: 28rem;
+    height: 5rem;
+    border: 1px solid;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    margin-top: 14rem;
+}
+.sidebar-search:hover {
+    color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+}
+.sidebar-link .arrow-icon {
+    font-size: 4rem;
+    position: absolute;
+    top: 2rem;
+}
+/*SideBar end*/
+
+@media(min-width:769px) and (max-width:1024px){
+    :root{
+        font-size: 8px;
+    }
+}
+@media(min-width:481px) and (max-width:768px){
+    :root{
+        font-size: 6px;
+    }
+}
+@media(min-width:320px) and (max-width:480px){
+    :root{
+        font-size: 4px;
+    }
+}
+@media(max-width:768px){
+    .header-search{
+        display: none;
+    }
+    .sidebardiv{
+        display: block;
+    }
+    .links{
+        display: none;
+    }
+    .menu-container{
+        display: block;
+    }
+    .header-logo{
+        font-size: 6rem;
+    }
+}
